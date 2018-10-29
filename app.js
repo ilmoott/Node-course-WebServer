@@ -55,6 +55,13 @@ app.get('/about',function(req, res){
     });
 });
 
+app.get('/projects', (req, res)=>{
+    res.render('projects.hbs',{
+        pageTitle: 'Projects Page',
+        projectMsg: 'Portfolio Page Here'
+    });
+});
+
 app.listen(port, function(){
     console.log('server running on port 3000');
 });
